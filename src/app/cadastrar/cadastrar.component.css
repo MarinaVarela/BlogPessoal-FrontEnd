@@ -1,9 +1,10 @@
-#img-bg{
-    background-image: url('../../assets/img/');
+#img-bg{    
+
+    background-image: url('../../assets/img/close-up-beautiful-dachshund-spending-time-with-family.jpg');
   
     min-height: 695px;
   
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }
