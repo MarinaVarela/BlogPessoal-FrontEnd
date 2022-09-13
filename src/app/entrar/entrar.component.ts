@@ -11,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 })
 export class EntrarComponent implements OnInit {
   
-  usuarioLogin: UsuarioLogin = new UsuarioLogin
+  usuarioLogin: UsuarioLogin = new UsuarioLogin()
 
   constructor(
     private auth: AuthService,
@@ -23,7 +23,7 @@ export class EntrarComponent implements OnInit {
   }
 
   entrar(){
-this.auth.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
+  this.auth.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
   this.usuarioLogin = resp
 
   environment.token = this.usuarioLogin.tipo
